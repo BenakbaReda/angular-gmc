@@ -1,1 +1,18 @@
-<p>event-binding works!</p>
+<div class="container-fluid">
+  <h1>EVENT BINDING CHECKPOINT </h1>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color:lavender; height: 10rem;">
+      <div class="form-group">
+        <label  >write your color & tape ENTRE :</label>
+        <input type="text" class="form-control" value="{{TxtColor}}" #box (keyup.enter)="onKeyEnter(box.value)"  >
+      </div>
+    </div>
+  <div class="col-sm-2"  [style.background-color]="DivBgColor" style="margin-left: 2rem;">DIV color Test </div>
+  <div class="d-flex justify-content-center align-items-center "  >
+
+    <button class="btn btn-info" style="margin-left: 2rem;" (click)="ChangeColorDiv()">Set Default Color </button>
+  </div>
+
+  </div>
+</div>
