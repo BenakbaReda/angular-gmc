@@ -7,13 +7,17 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { InteractionDadSonComponent } from './interaction-dad-son/interaction-dad-son.component';
+import { ComponentSonComponent } from './component-son/component-son.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    InteractionDadSonComponent,
+    ComponentSonComponent
   ],
   imports: [
     BrowserModule,

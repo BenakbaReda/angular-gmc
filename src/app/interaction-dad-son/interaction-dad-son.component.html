@@ -1,0 +1,24 @@
+ 
+ 
+ 
+<div class="container pt-3"  [style.background-color]="selectedColor.name"   >
+
+  <div class="form-group">
+ 
+    <h1>  select color parent  </h1>
+    <select   class="form-control   m-1"   [(ngModel)]="selectedColor">
+      <option *ngFor="let item of ColorObj" [ngValue]="item">
+           {{item.name}}
+       </option>
+    </select>
+ 
+  </div>
+  <div class="form-group  m-5 p-3 ">
+    <app-component-son [NameParentColor]="selectedColor.name"  ></app-component-son>
+
+     
+  </div>
+
+ 
+</div>
+ 
