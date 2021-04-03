@@ -1,0 +1,62 @@
+
+<div class="container  justify-content-center">
+    <h1>Two Way Data Binding  CHECKPOINT </h1>
+  
+<div class="card-container">
+    <div class="card">
+        <div class="front">
+            <div class="cover">
+                <img src="../../assets/images/rotating_card_thumb3.png"/>
+            </div>
+            <div class="user">
+                <img class="img-circle" src="../../assets/images/rotating_card_profile3.png"/>
+            </div>
+            <div class="content">
+                <div class="main">
+                    <h3 class="name">{{Name}}</h3>
+                    <p class="profession">{{Profession}}</p>
+
+                    <p class="text-center"> {{Desciption}} </p>
+                </div>
+                <div class="footer">
+                    <div class="rating">
+                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end front panel -->
+        <div class="back">
+            <div class="header">
+                <h1 class="display-5 text-center">write data information  to test two way DataBinding </h1>
+            </div>
+            <div class="content">
+                <div class="main">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Name</span>
+                        </div>
+                        <input type="text" [(ngModel)]="Name"  class="form-control" placeholder="tape your Name" aria-label="Name" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Profession</span>
+                        </div>
+                        <input type="text" [(ngModel)]="Profession"  class="form-control" placeholder="tape your Profession" aria-label="Profession" aria-describedby="basic-addon1">
+                      </div>
+                       
+        
+                      
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Desciption</span>
+                        </div>
+                        <textarea class="form-control"  [(ngModel)]="Desciption"   aria-label="Desciption"></textarea>
+                      </div>
+                </div>
+            </div>
+           
+        </div> <!-- end back panel -->
+    </div> <!-- end card -->
+</div> <!-- end card-container -->
+</div>

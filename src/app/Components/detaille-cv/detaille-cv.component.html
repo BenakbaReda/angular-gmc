@@ -1,0 +1,37 @@
+<div class='card' *ngIf='DetailPersonne'>
+    <div class='card-header '>
+        CV detaills on Perssone : {{DetailPersonne?.id}}
+    </div>
+
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md-8'>
+                <div class='row'>
+                    <div class='col-md-4'>Name:</div>
+                    <div class='col-md-8'>{{DetailPersonne.name}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>firstname:</div>
+                    <div class='col-md-8'>{{DetailPersonne.firstname}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>age:</div>
+                    <div class='col-md-8'>{{DetailPersonne.age}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>cin:</div>
+                    <div class='col-md-8'>{{DetailPersonne.cin}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>job:</div>
+                    <div class='col-md-8'>{{DetailPersonne.job}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-4'>path:</div>
+                    <div class='col-md-8'>{{DetailPersonne.path}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

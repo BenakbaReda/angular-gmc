@@ -1,0 +1,9 @@
+<div class='card'>
+    <div class='card-header'>Liste CV </div>
+    <div class='table-responsive' *ngFor="let Cv of  ListCv">
+        <div class="m-2">
+            <app-item-cv [ItemCv]="Cv" (DetailItemEvent)="DetailHandler($event)"></app-item-cv>
+        </div>
+    </div>
+
+</div>
