@@ -1,1 +1,5 @@
-<p>interaction-son-and-dad works!</p>
+<div class="d-flex m-5 justify-content-center align-items-center  height: 100vh" [style.background-color]="DivBgColor">
+
+    <app-child (ColorEvent)="GetColorEvent($event)"></app-child>
+
+</div>

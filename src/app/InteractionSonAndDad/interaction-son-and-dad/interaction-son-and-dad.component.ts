@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InteractionSonAndDadComponent implements OnInit {
 
+  DivBgColor :string ="yallow"
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  GetColorEvent(p: string) {
+    this.DivBgColor=p;
+    console.log(this.DivBgColor);
   }
 
 }

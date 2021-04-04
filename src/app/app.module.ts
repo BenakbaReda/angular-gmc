@@ -38,6 +38,7 @@ import { SonReceiveComponent } from './InteractionDadAndSon/son-receive/son-rece
 import { ListCvComponent } from './Components/list-cv/list-cv.component';
 import { ItemCvComponent } from './Components/item-cv/item-cv.component';
 import { DetailleCvComponent } from './Components/detaille-cv/detaille-cv.component';
+import { ChildComponent } from './InteractionSonAndDad/child/child.component';
  
 
 @NgModule({
@@ -75,7 +76,8 @@ import { DetailleCvComponent } from './Components/detaille-cv/detaille-cv.compon
     SonReceiveComponent,
     ListCvComponent,
     ItemCvComponent,
-    DetailleCvComponent
+    DetailleCvComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
