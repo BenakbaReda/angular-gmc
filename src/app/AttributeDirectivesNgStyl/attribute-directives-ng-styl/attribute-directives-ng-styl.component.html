@@ -1,1 +1,34 @@
-<p>attribute-directives-ng-styl works!</p>
+<div style="margin: 15px; display: flex; align-items: center;">
+    <div style="margin: 15px ; display: block;">
+        <div class="form-group">
+            <label for="fColorP">set paragraph color  {{CurrentColor}} </label>
+            <input type="color" class="form-control" value="{{CurrentColor}}" [(ngModel)]="CurrentColor" id="fColorP" placeholder="set paragraph color">
+
+        </div>
+        <div class="form-group">
+            <label for="SizeP">set paragraph Size {{CurrentSize}}</label>
+            <input type="number" class="form-control" value="{{CurrentSize}}" [(ngModel)]="CurrentSize" id="SizeP" placeholder="set paragraph Size">
+
+        </div>
+        <div class="form-group">
+            <label for="FontP">select paragraph Font </label>
+            <select class="form-control" [(ngModel)]="SelectedFont" id="FontP">
+                <option *ngFor="let elmFont of FontNameList" [ngValue]="elmFont">
+                     {{elmFont}}
+                 </option>
+            </select> {{SelectedFont | json}}
+        </div>
+
+
+
+
+
+    </div>
+    <div style="margin: 15px ;">
+        <div class="form-group" [ngStyle]="{'color':getFontColor() , 'font-size':getFontSize() ,'font-family':getFontFamilly() }">
+            <p>attribute-directives-ng-styl works!</p>
+        </div>
+
+    </div>
+
+</div>
