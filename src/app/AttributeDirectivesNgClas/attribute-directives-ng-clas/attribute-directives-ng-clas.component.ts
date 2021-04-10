@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttributeDirectivesNgClasComponent implements OnInit {
 
+  isTheme01 : boolean=false;
+  isTheme02 : boolean=false;
+  isTheme03 : boolean=false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  OnClick_Theme01(): void {
+    this.isTheme01 =true; this.isTheme02 =false; this.isTheme03 =false;
+
+  }
+  OnClick_Theme02(): void {
+    this.isTheme01 =false; this.isTheme02 =true; this.isTheme03 =false;
+  }
+  OnClick_Theme03(): void {
+    this.isTheme01 =false; this.isTheme02 =false; this.isTheme03 =true;
+  }
 }

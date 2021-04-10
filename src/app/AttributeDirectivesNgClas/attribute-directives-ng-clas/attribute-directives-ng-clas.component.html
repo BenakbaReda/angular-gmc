@@ -1,1 +1,24 @@
-<p>attribute-directives-ng-clas works!</p>
+<div style="margin: 15px; display: flex; align-items: center;">
+    <div style="margin: 15px ; display: block;">
+        <div class="form-group">
+            <button class="btn btn-secondary" (click)="OnClick_Theme01()"> set Theme <em>01</em></button>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-secondary" (click)="OnClick_Theme02()"> set Theme <em>02</em></button>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-secondary" (click)="OnClick_Theme03()"> set Theme <em>03</em></button>
+        </div>
+    </div>
+    <div style="margin: 15px ;">
+        <div>
+            <p [ngClass]="{
+                myTheme1: isTheme01,
+                myTheme2: isTheme02,
+                myTheme3: isTheme03
+              }">attribute-directives-ng-clas works!</p>
+        </div>
+
+    </div>
+
+</div>
