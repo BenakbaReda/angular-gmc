@@ -39,6 +39,8 @@ import { ListCvComponent } from './Components/list-cv/list-cv.component';
 import { ItemCvComponent } from './Components/item-cv/item-cv.component';
 import { DetailleCvComponent } from './Components/detaille-cv/detaille-cv.component';
 import { ChildComponent } from './InteractionSonAndDad/child/child.component';
+import { CustomDirectiveDirective } from './directive/custom-directive.directive';
+import { HighlightDirective } from './directive/highlight.directive';
  
 
 @NgModule({
@@ -77,7 +79,9 @@ import { ChildComponent } from './InteractionSonAndDad/child/child.component';
     ListCvComponent,
     ItemCvComponent,
     DetailleCvComponent,
-    ChildComponent
+    ChildComponent,
+    CustomDirectiveDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
